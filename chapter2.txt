@@ -1,0 +1,25 @@
+Notes from chapter 2 of Webscraping With Python
+
+
+Beautiful Soup:
+
+find() and findAll() functions: 
+  -find(tag, attributes, recursive, text, keywords)
+  -findall(tag, attributes, recursive, text, limit, keywords)
+        Tag:
+            
+        
+        Attrubutes:
+            
+        
+        Recursive:
+            
+        
+        Text: 
+            
+        
+        Limit: 
+            
+        
+        Keyword: 
+            
