@@ -6,20 +6,18 @@ Beautiful Soup:
 find() and findAll() functions: 
   -find(tag, attributes, recursive, text, keywords)
   -findall(tag, attributes, recursive, text, limit, keywords)
-        Tag:
-            
+        Tag(most used): you can pass a string or a list of strings of a name of tags. 
         
-        Attrubutes:
-            
+        Attrubutes(most used): you can pass a dict of attributes and matches tags that contain any one of those attributes 
+            example: .findAll('span', {'class': {'red', 'green'}}    this returns all green+red span tags in the html doc
         
-        Recursive:
+        Recursive: a Boolean. if True the function looks into the children and grand children tags that match the             parameters. If False the function only looks at the top level tags in your document. Default is set to True 
             
+        Text: matches based on the text content of the tags 
+            example: nameList= bdObj.findAll(text = 'the prince').   len(nameList) --> 7
         
-        Text: 
-            
+        Limit: takes a int which sets the number of the paraments the findAll function in the html doc in the order on the page        
         
-        Limit: 
-            
-        
-        Keyword: 
+        Keyword: allowes you to select tags that contain a particular attribute. This can be done alternative. Which is less likely to run into problems.  
+          example: allText = bsObj.findAll(id = 'text')
             
